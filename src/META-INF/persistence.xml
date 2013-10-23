@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<persistence version="2.0" xmlns="http://java.sun.com/xml/ns/persistence" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://java.sun.com/xml/ns/persistence http://java.sun.com/xml/ns/persistence/persistence_2_0.xsd">
+  <persistence-unit name="YazlabDeneme2PU" transaction-type="RESOURCE_LOCAL">
+    <provider>org.eclipse.persistence.jpa.PersistenceProvider</provider>
+    <class>Kisi.Hasta</class>
+    <class>Kisi.Doktor</class>
+    <class>Kisi.Kisi</class>
+    <class>Servis.Poliklinik</class>
+    <class>Servis.Ucret</class>
+    <class>Kisi.HastaBilgi</class>
+    <class>Kisi.DoktorDurum</class>
+    <class>Servis.Izin</class>
+    <class>Servis.Zaman</class>
+    <class>Kisi.Hastalik</class>
+    <class>Servis.ilac</class>
+    <class>Servis.Servis</class>
+    <class>Servis.Depo</class>
+    <class>Servis.Malzeme</class>
+    <class>Servis.MalzemeTur</class>
+    <class>Servis.Tetkik</class>
+    <class>Servis.TetkikCesni</class>
+    <class>Servis.Tedavi</class>
+    <class>Servis.Oda</class>
+    <class>Servis.HastaServisBilgi</class>
+    <properties>
+      <property name="javax.persistence.jdbc.url" value="jdbc:sqlite:yazlabdeneme2.sqlite"/>
+      <property name="javax.persistence.jdbc.password" value="5"/>
+      <property name="javax.persistence.jdbc.driver" value="org.sqlite.JDBC"/>
+      <property name="javax.persistence.jdbc.user" value="Oktay"/>
+      <property name="eclipselink.ddl-generation" value="create-tables"/>
+    </properties>
+  </persistence-unit>
+</persistence>
